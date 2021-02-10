@@ -5,7 +5,6 @@
   margin: 0;
   box-sizing: border-box;
   text-decoration: none;
-  list-style: none;
   color: #d7d5b2;
 }
 
@@ -34,6 +33,7 @@ html {
 
 .header ul {
   overflow: hidden;
+  list-style: none;
 }
 
 .header ul a {
@@ -155,7 +155,7 @@ html {
 }
 
 .main-container {
-  margin: 0 40px
+  margin: 0 20px
 }
 
 /* .main-container h1 {
@@ -172,7 +172,7 @@ html {
 
 /* SECTIONS  */
 
-.section {
+.news-section {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -182,7 +182,7 @@ html {
   margin-bottom: 80px;
 }
 
-.section h1 {
+.news-section h1 {
   position: absolute;
   top: -40px;
   font-size: 2em;
@@ -192,27 +192,27 @@ html {
   white-space: nowrap;
 }
 
-.section h2 {
+.news-section h2 {
   font-family: 'Cinzel', sans-serif;
   font-weight: 800;
   text-transform: capitalize;
 }
 
-.section p {
+.news-section p {
   font-size: 1em;
   font-family: 'Times New Roman', sans-serif;
   text-indent: 5px;
   text-align: justify;
 }
 
-.section img {
+.news-section img {
   width: 100%;
   height: 25vh;
   object-fit: cover;
   border-radius: 20px;
 }
 
-.section-info {
+.news-section-info {
   margin-top: -10px;
   padding: 20px
 }
@@ -224,4 +224,81 @@ html {
   background-color: var(--Separator);
   border: 2px solid var(--Separator);
   margin: 5px 0px
+}
+
+/* OTHER NEWS  */
+
+.other {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  margin-top: -50px;
+  background-color: rgb(66, 66, 66);
+  border-radius: 20px;
+  box-shadow: 2px 2px 10px black;
+  z-index: 1;
+  padding: 10px;
+  white-space: pre-line;
+}
+
+.other h2 {
+  font-size: 1em;
+  position: absolute;
+  margin-top: -30px;
+  color: #1e89c8;
+}
+
+.other h3 {
+  margin-top: 10px;
+}
+
+.other ol {
+  display: flex;
+  justify-content: space-between;
+  list-style: decimal;
+  padding: 10px;
+}
+
+.other ol li {
+  font-size: 0.8em;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 0 15px;
+  border-right: 1px solid gray;
+  transition: background-color .2s ease-out;
+}
+
+.other ol li:hover {
+  background-color: rgb(49, 49, 49);
+}
+
+.other ol li a:active {
+  color: #e5d823;
+}
+
+.other ol li:nth-child(4) {
+  border-right: none;
+}
+
+.other ol li img {
+  width: 15vw;
+  height: 8vh;
+  border-radius: 20px;
+  object-fit: fill;
+}
+
+/* FOOTER  */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-top: 60px;
+  border-top: 1px solid gray;
+  background-color: #1e89c8;
+  height: 200px;
+  width: 100%;
 }

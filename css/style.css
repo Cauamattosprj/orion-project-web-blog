@@ -258,6 +258,7 @@ html {
   justify-content: space-between;
   list-style: decimal;
   padding: 10px;
+  max-width: max-content;
 }
 
 .other ol li {
@@ -266,7 +267,7 @@ html {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  padding: 0 15px;
+  padding: 0 10px;
   border-right: 1px solid gray;
   transition: background-color .2s ease-out;
 }

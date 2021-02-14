@@ -302,7 +302,7 @@ html {
   border-top: 1px solid gray;
   background-color: #1e89c8;
   height: 200px;
-  width: 100%;
+  width: 100vw;
 }
 
 .footer .crazy {
@@ -369,4 +369,19 @@ html {
     opacity: 1;
   }
 
+}
+
+@media only screen and (max-width: 576px) {  
+  .other h3 {
+    margin-top: 40px;
+  }
+  
+  .other ol li {
+    font-size: 0.7em;
+  }
+
+  .other ol li img {
+    top: 0;
+    position: absolute;
+  }
 }

@@ -302,7 +302,7 @@ html {
   border-top: 1px solid gray;
   background-color: #1e89c8;
   height: 200px;
-  width: 100vw;
+  width: 100%;
 }
 
 .footer .crazy {
@@ -373,7 +373,7 @@ html {
 
 @media only screen and (max-width: 576px) {  
   .other h3 {
-    margin-top: 40px;
+    margin-top: 8vh;
   }
   
   .other ol li {
